@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid black; */
+    animation: moveBox 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes moveBox{
+    0%{
+       transform: translateX(0);
+       background-color: brown;
+     }
+    25%{
+        transform: translateY(300px); 
+        background-color: blue;
+
+    }
+
+    50%{
+        transform: translate(300px,300px);
+        background-color: green;
+       
+    }
+    75%{
+        transform: translate(300px,0);
+        background-color: yellow;
+    }
+     
+    
+    100%{
+        transform: translateX(0);
+        background-color: brown;
+
+
+    }
+}
